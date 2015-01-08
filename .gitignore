@@ -4,3 +4,6 @@
 /ac-dict
 .mc-lists.el
 projectile*
+ido.last
+places
+smex-items
