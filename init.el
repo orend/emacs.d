@@ -24,6 +24,7 @@
                             ack-and-a-half
                             auto-complete
                             cider
+                            ;;clj-refactor
                             clojure-mode
                             ;;cljdoc
                             dash

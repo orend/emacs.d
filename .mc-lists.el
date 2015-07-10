@@ -4,11 +4,13 @@
 (setq mc/cmds-to-run-for-all
       '(
         beginning-of-buffer
+        smex
         ))
 
 (setq mc/cmds-to-run-once
       '(
         end-of-buffer
+        isearch-delete-char
         isearch-forward-regexp
         isearch-other-control-char
         isearch-printing-char
