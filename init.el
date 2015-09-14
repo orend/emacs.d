@@ -24,7 +24,7 @@
                             ack-and-a-half
                             auto-complete
                             cider
-                            ;;clj-refactor
+                            clj-refactor
                             clojure-mode
                             ;;cljdoc
                             dash
@@ -145,3 +145,6 @@
 
 ;; GC tuning
 (setq gc-cons-threshold 20000000)
+
+;; clj-refactor
+(require 'clj-refactor)

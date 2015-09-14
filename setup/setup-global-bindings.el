@@ -20,7 +20,7 @@
 
 (global-set-key (kbd "C-c R") 'revert-all-buffers)
 
-(global-set-key (kbd "C-c C-k") 'kill-whole-line)
+(global-set-key (kbd "C-c k") 'kill-whole-line)
 
 ;; Resize
 (global-set-key (kbd "C-S-s-<left>") 'shrink-window-horizontally)
