@@ -148,3 +148,6 @@
 
 ;; clj-refactor
 (require 'clj-refactor)
+
+;; ace-jump-mode
+(require 'setup-ace-jump-mode)
