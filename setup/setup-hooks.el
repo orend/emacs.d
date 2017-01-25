@@ -3,7 +3,7 @@
 
 ;; Clojure mode
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
-(add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
+(add-hook 'clojure-mode-hook 'eldoc-mode)
 (add-hook 'clojure-mode-hook (lambda ()
                                (define-clojure-indent
                                  ;; Compojure
@@ -27,7 +27,7 @@
                                  (provided 'defun))))
 
 ;; Cider
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(add-hook 'cider-mode-hook 'eldoc-mode)
 
 ;; linum
 (add-hook 'prog-mode-hook 'linum-mode)

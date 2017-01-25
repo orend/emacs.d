@@ -15,5 +15,6 @@
         isearch-other-control-char
         isearch-printing-char
         sp--self-insert-command
+        sp-kill-sexp
         tags-loop-continue
         ))
