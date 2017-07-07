@@ -6,7 +6,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(add-to-list 'load-path user-emacs-directory)
+;(add-to-list 'load-path user-emacs-directory)
 (add-to-list 'load-path (concat user-emacs-directory "setup"))
 (add-to-list 'load-path (concat user-emacs-directory "vendor"))
 
@@ -150,8 +150,5 @@
 ;; GC tuning
 (setq gc-cons-threshold 20000000)
 
-;; clj-refactor
-(require 'clj-refactor)
-
 ;; ace-jump-mode
-(require 'setup-ace-jump-mode)
+;(require 'setup-ace-jump-mode)
