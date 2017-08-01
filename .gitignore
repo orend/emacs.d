@@ -11,3 +11,5 @@ places
 smex-items
 custom.el
 .cask/
+ac-comphist.dat
+network-security.data
