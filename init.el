@@ -67,6 +67,10 @@
 ;; diminish
 (require 'diminish)
 
+(defun my-java-mode-hook ()
+    (eclim-mode t))
+
+(add-hook 'java-mode-hook 'my-java-mode-hook)
 ;; OSX settings
 (when (eq system-type 'darwin)
   (require 'osx))
@@ -81,7 +85,8 @@
 ;; http://emacswiki.org/emacs/DeleteSelectionMode
 (delete-selection-mode 1)
 
-
+;;(require 'lsp-java)
+;;(add-hook 'java-mode-hook #'lsp)
 ;; diff-hl
 ;(global-diff-hl-mode 1)
 
@@ -134,6 +139,15 @@
 
 ;; global key bindings
 (require 'setup-global-bindings)
+
+;; meghanada java development
+(require 'setup-meghanada)
+
+;; google style guide
+;; (require 'setup-google-c-style)
+
+;; lsp-java
+;;(require 'setup-lsp-java)
 
 ;; undo-tree
 (global-undo-tree-mode)

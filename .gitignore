@@ -1,3 +1,11 @@
+syntax: glob
+*~
+\#*\#
+
+# Ignore compiled files.
+*.elc
+TAGS
+
 /auto-save-list
 /backups
 /elpa
@@ -11,5 +19,6 @@ places
 smex-items
 custom.el
 .cask/
-ac-comphist.dat
 network-security.data
+/.cache
+/var
