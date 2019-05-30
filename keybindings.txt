@@ -1,9 +1,22 @@
+C-h m           describe-mode
+C-h i           general help
+C-h k           describe-key
+C-h f           describe-function
+C-h b           describe-bindings (all of them)
+C-h t           start tutorial
+
 C-n             next-line
 C-p             previous-line
+C-l             recenter-top-bottom
 C-e             move-end-of-line
+M-e             move-end-of-paragraph
 C-a             custom-move-beginning-of-line
 M-a             backward-sentence
 M-b             backward-word
+M-f             forward-word
+M->             end of buffer
+C-v             next page
+M-v             prev page
 
 C-c d           custom-duplicate-line
 
@@ -48,6 +61,8 @@ C-x C-u         upcase-region
 M-t             transpose-words
 M-u             upcase-word
 
+M-digit         repeat next command digit times
+C-u             repeat next command 4 times (twice to repeat 16 times, 3 times for 64)
 
 C = control
 s = option
