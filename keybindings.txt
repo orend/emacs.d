@@ -3,6 +3,7 @@ C-h i           general help
 C-h k           describe-key
 C-h f           describe-function
 C-h b           describe-bindings (all of them)
+C-h w           command-name
 C-h t           start tutorial
 
 C-n             next-line
@@ -26,6 +27,7 @@ M-y             yank-pop
 
 M-@             mark-word
 C-SPC           set-mark-command
+C-u C-SPC       previous mark
 s-j             exchange-point-and-mark
 C-c C-<         mc/mark-all-like-this
 
@@ -63,6 +65,10 @@ M-u             upcase-word
 
 M-digit         repeat next command digit times
 C-u             repeat next command 4 times (twice to repeat 16 times, 3 times for 64)
+
+Code Editing
+
+M-;             comment region
 
 C = control
 s = option
