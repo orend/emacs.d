@@ -43,6 +43,7 @@
                             ido-ubiquitous
                             ido-vertical-mode
                             magit
+                            meghanada
                             multiple-cursors
                             perspective
                             projectile
@@ -93,6 +94,14 @@
 ;; emacs backup
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq backup-by-copying t)
+
+;; Fix for the warnings
+
+(defvar ido-cur-item nil)
+(defvar ido-default-item nil)
+(defvar ido-cur-list nil)
+(defvar predicate nil)
+(defvar inherit-input-method nil)
 
 ;; autosave
 (setq auto-save-default nil)
