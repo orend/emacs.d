@@ -1,1 +1,1 @@
-git clone git@github.com:orend/emacs.d.git .emacs.
+git clone git@github.com:orend/emacs.d.git .emacs.d
