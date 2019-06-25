@@ -19,6 +19,8 @@ M->             end of buffer
 C-v             next page
 M-v             prev page
 
+s-`             other-frame (switch between frames)
+
 C-c d           custom-duplicate-line
 
 M-w             kill-ring-save
@@ -69,6 +71,8 @@ C-u             repeat next command 4 times (twice to repeat 16 times, 3 times f
 Code Editing
 
 M-;             comment region
+M-.             meghanada-jump-declaration
+M-,             meghanada-back-jump
 
 C = control
 s = option
