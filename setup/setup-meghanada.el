@@ -4,7 +4,7 @@
             ;; meghanada-mode on
             (meghanada-mode t)
             ;; enable telemetry
-            (meghanada-telemetry-enable t)
+;;            (meghanada-telemetry-enable t)
             (flycheck-mode +1)
             (setq c-basic-offset 4)
             ;; use code format

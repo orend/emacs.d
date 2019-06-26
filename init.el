@@ -68,10 +68,10 @@
 ;; diminish
 (require 'diminish)
 
-(defun my-java-mode-hook ()
-    (eclim-mode t))
+;;(defun my-java-mode-hook ()
+;;    (eclim-mode t))
 
-(add-hook 'java-mode-hook 'my-java-mode-hook)
+;;(add-hook 'java-mode-hook 'my-java-mode-hook)
 ;; OSX settings
 (when (eq system-type 'darwin)
   (require 'osx))
