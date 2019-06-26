@@ -40,6 +40,7 @@
                             discover-my-major
                             expand-region
                             flx-ido
+                            highlight-symbol
                             hydra
                             ido-ubiquitous
                             ido-vertical-mode
@@ -151,11 +152,11 @@
 ;; global key bindings
 (require 'setup-global-bindings)
 
+;; google style guide
+(require 'google-c-style)
+
 ;; meghanada java development
 (require 'setup-meghanada)
-
-;; google style guide
-;; (require 'setup-google-c-style)
 
 ;; lsp-java
 ;;(require 'setup-lsp-java)
