@@ -40,6 +40,7 @@
                             discover-my-major
                             expand-region
                             flx-ido
+                            hydra
                             ido-ubiquitous
                             ido-vertical-mode
                             magit
@@ -55,6 +56,7 @@
                             solarized-theme
                             sr-speedbar
                             undo-tree
+                            use-package
                             volatile-highlights))
 
 (require 'setup-required-packages)
