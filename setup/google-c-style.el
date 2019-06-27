@@ -62,7 +62,7 @@ Suitable for inclusion in `c-offsets-alist'."
      ;; the token after the initial colon.
      ((looking-at ":\\s *")
       (goto-char (match-end 0))))
-    (vector (+ 4 (current-column)))))
+    (vector (+ 8 (current-column)))))
 
 ;;;###autoload
 (defconst google-c-style
@@ -106,6 +106,7 @@ Suitable for inclusion in `c-offsets-alist'."
                        list-close-comma
                        scope-operator))
     (c-offsets-alist . ((arglist-intro google-c-lineup-expression-plus-4)
+                        (arglist-cont-nonempty . ++)   ;; for arglists that wraps, don't align with open brace
                         (func-decl-cont . ++)
                         (member-init-intro . ++)
                         (inher-intro . ++)
