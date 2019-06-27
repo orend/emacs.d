@@ -74,6 +74,11 @@ M-;             comment region
 M-.             meghanada-jump-declaration
 M-,             meghanada-back-jump
 
+Indentation Debugging
+
+C-c C-s         (c-show-syntactic-information) to ask Emacs what syntax element it thinks you're looking at.
+C-c C-o         (c-set-offset) to tell it you want to change the indentation level for this syntactic element.
+
 C = control
 s = option
 M = command
