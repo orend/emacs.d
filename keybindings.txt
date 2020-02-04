@@ -33,6 +33,7 @@ C-SPC           set-mark-command
 C-u C-SPC       previous mark
 s-j             exchange-point-and-mark
 C-c C-<         mc/mark-all-like-this
+C-x SPC         set rectangle mode
 
 C-c k           kill-whole-line
 C-w             kill-region
@@ -45,6 +46,7 @@ C-x h           mark-whole-buffer
 C-x k           kill-buffer
 C-x +           balance-windows
 C-x C-b         display all open buffers
+C-x R           refresh open buffers
 
 C-x z           repeat
 
