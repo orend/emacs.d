@@ -19,6 +19,7 @@
               (meghanada-mode t)
               (smartparens-mode t)
               (rainbow-delimiters-mode t)
+
               (highlight-symbol-mode t)))
 
   :config
