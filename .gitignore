@@ -23,3 +23,5 @@ network-security.data
 /.cache
 /var
 /meghanada
+/url
+/request

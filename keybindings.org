@@ -104,3 +104,4 @@ Shortcuts
 | C | control |
 | s | option  |
 | M | command |
+| S | shift   |
