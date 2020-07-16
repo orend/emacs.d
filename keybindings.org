@@ -58,7 +58,6 @@
 | C-x h                 | mark-whole-buffer                                                        |
 | C-x k                 | kill-buffer                                                              |
 | C-x +                 | balance-windows                                                          |
-| C-x o                 | other-window                                                             |
 | C-x C-b               | display all open buffers                                                 |
 | C-x R                 | refresh open buffers                                                     |
 | C-x C-f               | find-file                                                                |

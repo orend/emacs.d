@@ -6,7 +6,8 @@
 
 (global-set-key (kbd "C-a") 'custom-move-beginning-of-line)
 
-(global-set-key [remap other-window] 'ace-window)
+;; show numbers to select a window to jump to
+;; (global-set-key [remap other-window] 'ace-window)
 
 (global-set-key (kbd "C-c b") 'magit-blame-mode)
 
