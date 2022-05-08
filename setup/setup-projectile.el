@@ -2,6 +2,7 @@
 
 (setq projectile-enable-caching t)
 (setq projectile-mode-line-lighter "P")
+(setq persp-suppress-no-prefix-key-warning t)
 
 (global-set-key (kbd "s-f") 'projectile-find-file)
 

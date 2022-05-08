@@ -43,6 +43,7 @@
                             highlight-symbol
                             hydra
                             ido-vertical-mode
+                            ;; ido-ubiquitous
                             magit
                             meghanada
                             multiple-cursors
