@@ -4,7 +4,7 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
+;; (package-initialize)
 
 ;(add-to-list 'load-path user-emacs-directory)
 (add-to-list 'load-path (concat user-emacs-directory "setup"))
@@ -28,7 +28,7 @@
 ;; required packages
 (defvar required-packages '(better-defaults
                             ace-window
-                            ack-and-a-half
+                            ;; ack-and-a-half
                             auto-complete
                             cider
                             ;;clj-refactor
@@ -42,15 +42,14 @@
                             flx-ido
                             highlight-symbol
                             hydra
-                            ido-ubiquitous
                             ido-vertical-mode
                             magit
                             meghanada
                             multiple-cursors
-                            perspective
+                            ;; perspective
                             projectile
                             rainbow-delimiters
-                            slamhound
+                            ;; slamhound
                             smartparens
                             smart-mode-line
                             smex
@@ -113,7 +112,7 @@
 (require 'setup-smartparens)
 
 ;; ido
-(require 'setup-ido)
+;; (require 'setup-ido)
 
 ;; uniquify
 (require 'setup-uniquify)
