@@ -29,7 +29,7 @@
 (defvar required-packages '(better-defaults
                             ace-window
                             ;; ack-and-a-half
-			    amx
+                            amx
                             auto-complete
                             cider
                             ;;clj-refactor
@@ -46,6 +46,7 @@
                             hydra
                             ido-vertical-mode
                             ido-completing-read+
+                            lsp-mode
                             magit
                             meghanada
                             multiple-cursors
@@ -186,3 +187,5 @@
 
 (require 'amx)
 (amx-mode 1)
+
+(setq-default indent-tabs-mode nil)
