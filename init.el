@@ -44,7 +44,7 @@
                             highlight-symbol
                             hydra
                             ido-vertical-mode
-                            ;; ido-ubiquitous
+                            ido-completing-read+
                             magit
                             meghanada
                             multiple-cursors
@@ -114,7 +114,7 @@
 (require 'setup-smartparens)
 
 ;; ido
-;; (require 'setup-ido)
+(require 'setup-ido-completing-read+)
 
 ;; uniquify
 (require 'setup-uniquify)
