@@ -19,5 +19,5 @@
 ;; ido files to ignore
 (add-to-list 'ido-ignore-files "\\.DS_Store")
 
-(provide 'setup-ido)
+(provide 'setup-ido-completing-read+)
 ;; setup-ido ends here

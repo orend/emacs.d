@@ -1,0 +1,21 @@
+
+;; ----- amx-history -----
+(
+ package-list-packages
+ kill-buffer
+ rename-file
+ save-buffer
+ package-install
+ visual-line-mode
+ cd
+)
+
+;; ----- amx-data -----
+(
+ (visual-line-mode . 2)
+ (package-install . 1)
+ (package-list-packages . 2)
+ (save-buffer . 1)
+ (rename-file . 1)
+ (kill-buffer . 1)
+)

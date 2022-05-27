@@ -29,6 +29,7 @@
 (defvar required-packages '(better-defaults
                             ace-window
                             ;; ack-and-a-half
+			    amx
                             auto-complete
                             cider
                             ;;clj-refactor
@@ -182,3 +183,6 @@
 
 ;; ace-jump-mode
 ;(require 'setup-ace-jump-mode)
+
+(require 'amx)
+(amx-mode 1)
