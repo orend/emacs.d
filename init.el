@@ -40,6 +40,7 @@
                             discover-my-major
                             expand-region
                             flx-ido
+                            go-mode
                             highlight-symbol
                             hydra
                             ido-vertical-mode
