@@ -50,7 +50,7 @@
                             magit
                             meghanada
                             multiple-cursors
-                            ;; perspective
+                            perspective
                             projectile
                             rainbow-delimiters
                             ;; slamhound
