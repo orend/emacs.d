@@ -6,7 +6,7 @@
 | C-h i                 | general help                                                             |
 | C-h k                 | describe-key                                                             |
 | C-h f                 | describe-function                                                        |
-| C-h b                 | describe-bindings (all of them)                                          |
+| C-h b                 | describe-bindings for mode (all of them)                                 |
 | C-h w                 | command-name                                                             |
 | C-h t                 | start tutorial                                                           |
 | C-h a                 | apropos-command - all commands with regex                                |
