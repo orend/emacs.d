@@ -50,6 +50,7 @@
                             magit
                             meghanada
                             multiple-cursors
+                            org-superstar
                             perspective
                             projectile
                             rainbow-delimiters
@@ -189,3 +190,6 @@
 (amx-mode 1)
 
 (setq-default indent-tabs-mode nil)
+
+(require 'org-superstar)
+(add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))

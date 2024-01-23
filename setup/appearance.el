@@ -40,6 +40,9 @@
 (setq-default indicate-empty-lines t)
 (setq-default truncate-lines t)
 
+;;
+(setq global-visual-line-mode t)
+
 ;; Rename mode line
 (defmacro rename-modeline (package-name mode new-name)
   `(eval-after-load ,package-name
