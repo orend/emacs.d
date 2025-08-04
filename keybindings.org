@@ -116,6 +116,9 @@
 | C-c !                 | insert date (org-time-stamp-inactive)                                    |
 | C-c C-l               | insert link                                                              |
 | C-c C-t               | toggle todo                                                              |
+| M- Side Arrows        | change bullet depth                                                      |
+| M-S Side Arrows       | change bullet depth - including children                                 |
+| M- up/down Arrows     | move bullets up/down                                                     |
 |-----------------------+--------------------------------------------------------------------------|
 
 * Shortcuts

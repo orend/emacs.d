@@ -112,6 +112,13 @@
 
 ;; autosave
 (setq auto-save-default nil)
+(setq auto-save-interval 300)  ; Auto-save after 300 keystrokes
+(setq auto-save-timeout 30)  ; Auto-save after 30 seconds of idle time
+;; Auto-save whenever Emacs is idle for a certain amount of time
+(run-with-idle-timer 30 t 'do-auto-save)
+
+;; Auto-save on loss of focus
+(add-hook 'focus-out-hook 'do-auto-save)
 
 ;; smartparens
 (require 'setup-smartparens)
@@ -193,3 +200,11 @@
 
 (require 'org-superstar)
 (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
+
+;; (set-face-attribute 'default nil :font "Courier New")
+
+(require 'org-download)
+
+;; Drag-and-drop to `dired`
+(add-hook 'dired-mode-hook 'org-download-enable)
+(setq org-image-actual-width nil)
