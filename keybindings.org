@@ -33,8 +33,10 @@
 |-----------------------+--------------------------------------------------------------------------|
 | M-w                   | kill-ring-save                                                           |
 | M-k                   | kill-sentence                                                            |
+| C-k                   | kill from cursor to end of line                                          |
 | M-y                   | yank-pop                                                                 |
 | M-d                   | kill-word                                                                |
+| M-<DEL>               | kill-word immediatly before cursor                                       |
 | C-c k                 | kill-whole-line                                                          |
 | C-w                   | kill-region                                                              |
 |-----------------------+--------------------------------------------------------------------------|
@@ -95,6 +97,7 @@
 | M-digit               | repeat next command digit times                                          |
 | C-digit               | repeat next command digit times                                          |
 | C-M-digit             | repeat next command digit times                                          |
+| C-u digit             | repeat next command digit times                                          |
 | C-u                   | repeat next  command 4 times (twice to repeat 16  times, 3 times for 64) |
 | C--                   | negative arguments                                                       |
 | M--                   | negative arguments                                                       |
