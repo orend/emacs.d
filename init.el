@@ -116,15 +116,48 @@
 (defvar predicate nil)
 (defvar inherit-input-method nil)
 
-;; autosave
-(setq auto-save-default nil)
+;; Auto-save configuration
+(setq auto-save-default t)  ; Enable auto-save
 (setq auto-save-interval 300)  ; Auto-save after 300 keystrokes
 (setq auto-save-timeout 30)  ; Auto-save after 30 seconds of idle time
-;; Auto-save whenever Emacs is idle for a certain amount of time
-(run-with-idle-timer 30 t 'do-auto-save)
+
+;; Put auto-save files in a specific directory
+(setq auto-save-file-name-transforms
+      `((".*" ,(concat user-emacs-directory "auto-save/") t)))
+
+;; Create auto-save directory if it doesn't exist
+(unless (file-exists-p (concat user-emacs-directory "auto-save/"))
+  (make-directory (concat user-emacs-directory "auto-save/") t))
 
 ;; Auto-save on loss of focus
-(add-hook 'focus-out-hook 'do-auto-save)
+(add-hook 'focus-out-hook (lambda () (save-some-buffers t)))
+
+;; Backup files configuration
+(setq backup-directory-alist `(("." . ,(concat user-emacs-directory "backups/"))))
+(setq backup-by-copying t)  ; Don't clobber symlinks
+(setq delete-old-versions t)
+(setq kept-new-versions 6)
+(setq kept-old-versions 2)
+(setq version-control t)  ; Use versioned backups
+
+;; Create backups directory if it doesn't exist
+(unless (file-exists-p (concat user-emacs-directory "backups/"))
+  (make-directory (concat user-emacs-directory "backups/") t))
+
+;; Function to recover from auto-save files
+(defun recover-this-file ()
+  "Recover the current buffer from its auto-save file."
+  (interactive)
+  (let ((auto-save-file (make-auto-save-file-name)))
+    (if (file-exists-p auto-save-file)
+        (progn
+          (find-file auto-save-file)
+          (message "Recovered from auto-save file: %s" auto-save-file))
+      (message "No auto-save file found for this buffer"))))
+
+;; Save all buffers when Emacs loses focus or is killed
+(add-hook 'kill-emacs-hook (lambda () (save-some-buffers t)))
+(add-hook 'suspend-hook (lambda () (save-some-buffers t)))
 
 ;; smartparens
 (require 'setup-smartparens)
@@ -218,3 +251,11 @@
 ;; Enable visual-line mode globally
 (global-visual-line-mode 1)
 (diminish 'visual-line-mode)
+
+;; Desktop/Sessions - Save and restore Emacs sessions
+(desktop-save-mode 1)
+(setq desktop-path (list user-emacs-directory))
+(setq desktop-dirname user-emacs-directory)
+(setq desktop-base-file-name "emacs-desktop")
+(setq desktop-load-locked-desktop t)  ; Load desktop even if it's locked
+(setq desktop-auto-save-timeout 30)   ; Auto-save desktop every 30 seconds

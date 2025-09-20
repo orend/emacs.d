@@ -21,6 +21,9 @@
 
 (global-set-key (kbd "C-c R") 'revert-all-buffers)
 
+;; Recover from auto-save file
+(global-set-key (kbd "C-c C-r") 'recover-this-file)
+
 (global-set-key (kbd "C-c k") 'kill-whole-line)
 
 ;; Resize
