@@ -17,6 +17,11 @@
 ;; Splash
 (setq inhibit-startup-message t)
 
+;; Start Emacs server for emacsclient
+(require 'server)
+(unless (server-running-p)
+  (server-start))
+
 ;; Turn off mouse interface
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -209,3 +214,7 @@
 ;; Drag-and-drop to `dired`
 (add-hook 'dired-mode-hook 'org-download-enable)
 (setq org-image-actual-width nil)
+
+;; Enable visual-line mode globally
+(global-visual-line-mode 1)
+(diminish 'visual-line-mode)
