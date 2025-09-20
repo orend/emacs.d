@@ -29,8 +29,8 @@
 ;; Cider
 (add-hook 'cider-mode-hook 'eldoc-mode)
 
-;; linum
-(add-hook 'prog-mode-hook 'linum-mode)
+;; line numbers
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 ;; whitespace
 (add-hook 'prog-mode-hook 'whitespace-mode)

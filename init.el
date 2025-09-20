@@ -50,6 +50,7 @@
                             magit
                             meghanada
                             multiple-cursors
+                            org-download
                             org-superstar
                             perspective
                             projectile
