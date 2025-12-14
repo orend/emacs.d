@@ -253,9 +253,10 @@
 (diminish 'visual-line-mode)
 
 ;; Desktop/Sessions - Save and restore Emacs sessions
-(desktop-save-mode 1)
-(setq desktop-path (list user-emacs-directory))
-(setq desktop-dirname user-emacs-directory)
-(setq desktop-base-file-name "emacs-desktop")
-(setq desktop-load-locked-desktop t)  ; Load desktop even if it's locked
-(setq desktop-auto-save-timeout 30)   ; Auto-save desktop every 30 seconds
+;; Temporarily disabled due to perspective mode compatibility issues
+;; (desktop-save-mode 1)
+;; (setq desktop-path (list user-emacs-directory))
+;; (setq desktop-dirname user-emacs-directory)
+;; (setq desktop-base-file-name "emacs-desktop")
+;; (setq desktop-load-locked-desktop t)  ; Load desktop even if it's locked
+;; (setq desktop-auto-save-timeout 30)   ; Auto-save desktop every 30 seconds

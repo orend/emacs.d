@@ -1,0 +1,67 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Oct 21 14:54:32 2025
+;; Desktop file format version 208
+;; Emacs version 30.2
+
+;; Global section:
+(setq desktop-saved-frameset (vector 'frameset 1 '(26871 55016 664816 0) '(desktop . "208") "orend@macbookair.lan" nil nil (list (list (list '(minibuffer . t) '(fontsize . 0) '(font . "-*-Monaco-regular-normal-normal-*-14-*-*-*-m-0-iso10646-1") '(border-width . 0) '(internal-border-width . 2) '(child-frame-border-width) '(right-divider-width . 0) '(bottom-divider-width . 0) '(vertical-scroll-bars) '(horizontal-scroll-bars) '(foreground-color . "#839496") '(background-color . "#002b36") '(line-spacing) '(left-fringe . 8) '(right-fringe . 8) '(no-special-glyphs) '(undecorated) '(ns-appearance) '(ns-transparent-titlebar) '(z-group) '(no-focus-on-map) '(no-accept-focus) '(menu-bar-lines . 0) '(tab-bar-lines . 0) '(tool-bar-lines . 0) '(title) '(inhibit-double-buffering) '(icon-type) '(auto-raise) '(auto-lower) '(cursor-type . box) '(scroll-bar-width . 15) '(scroll-bar-height . 15) '(alpha) '(alpha-background) '(fullscreen) '(scroll-bar-foreground) '(scroll-bar-background) '(display-type . color) '(background-mode . dark) '(cursor-color . "#839496") '(font-parameter) '(environment) '(persp--modestring "[" #("m" 0 1 (face persp-selected-face)) "]") '(persp--recursive) '(persp--last) (desktop-list* 'persp--curr (record 'perspective "m" '("Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity" "Unprintable entity") nil nil '(26866 23797 333522 0) '(26866 23797 333523 0) "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 1 (get-buffer "metrics-report.js")))) mk))) '(persp--hash . "Unprintable entity") '(last-focus-update . t) '(frameset--id . "1338-574A-2994-ED8A") '(frameset--mini t . t) '(modeline . t) '(unsplittable) '(icon-name) '(visibility . t) '(display . "macbookair.lan") '(explicit-name) '(tool-bar-position . top) '(height . 39) '(width . 200) '(left . 370) '(top . 34)) '((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 76) (min-pixel-width . 80) (min-pixel-height-ignore . 57) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 19) (min-pixel-width-safe . 16)) 'leaf '(pixel-width . 1616) '(pixel-height . 722) '(total-width . 202) '(total-height . 38) '(normal-height . 1.0) '(normal-width . 1.0) '(buffer "ai.org" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 24830) (start . 23097)) '(prev-buffers (".emacs.d" 1071 2155) ("CAPABILITIES.md" 1 322) ("metrics-report.js" 6009 6923))))))
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '(#("rnn" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("metrics" 0 7 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/Users/orend/lib/notes/ai.org" "/Users/orend/lib/self/CAPABILITIES.md" "/Users/orend/lib/notes/ai.org"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/orend/lib/notes/ai.org"
+  "ai.org"
+  'org-mode
+  '(auto-revert-mode smartparens-mode show-smartparens-mode undo-tree-mode visual-line-mode org-superstar-mode font-lock-mode org-indent-mode)
+  24830
+  '(24820 t)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 26871 54939 851103 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (23925 7037 16385 16385 16385 1294 16385 16385 16385 16385 16385 16385 16385 16385 16385 7129))))
+
+(desktop-create-buffer 208
+  nil
+  ".emacs.d"
+  'dired-mode
+  '(font-lock-mode show-smartparens-mode visual-line-mode diff-hl-dired-mode)
+  2155
+  '(1 nil)
+  t
+  '("/Users/orend/.emacs.d/" "/Users/orend/.emacs.d/.claude/")
+  '((buffer-display-time 26871 54936 519670 0) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/orend/lib/self/CAPABILITIES.md"
+  "CAPABILITIES.md"
+  'markdown-mode
+  '(visual-line-mode undo-tree-mode show-smartparens-mode smartparens-mode eldoc-mode font-lock-mode)
+  322
+  '(1699 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 26871 54916 685580 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/orend/lib/self/src/tools/metrics-report.js"
+  "metrics-report.js"
+  'js-mode
+  '(whitespace-mode display-line-numbers-mode visual-line-mode undo-tree-mode auto-complete-mode show-smartparens-mode smartparens-mode font-lock-mode)
+  6923
+  '(6923 nil)
+  nil
+  nil
+  '((buffer-display-time 26871 54916 464062 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring nil)))
+
